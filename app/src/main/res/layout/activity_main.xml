@@ -1,105 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF59D">
-    <LinearLayout
-        android:id="@+id/first"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding = "16px">
+    android:background="#F5F5DC"
+    android:orientation="vertical"
+    android:padding="10dp">
+
 
     <TextView
-        android:id= "@+id/view_1"
+        android:id="@+id/gameTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Gra w kości. Autor: Michał Lolo"
-        />
-    <Button
-        android:id ="@+id/guzik"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RZUĆ KOŚCMI"
-        />
-    </LinearLayout>
+        android:textColor="#FFFFFF"
+        android:background="#A52A2A"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="16dp" />
+
+
     <LinearLayout
-        android:id="@+id/secondary"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding = "16px">
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
 
-    <TextView
-        android:id= "@+id/view_2"
-        android:layout_width="0dp"
-        android:layout_weight="0.5"
-        android:layout_height="wrap_content"
 
-        android:text="?"
-        />
-    <TextView
-        android:id= "@+id/view_3"
-        android:layout_width="0dp"
-        android:layout_weight="0.5"
-        android:layout_height="wrap_content"
-        android:text="?"
-        />
-    <TextView
-        android:id= "@+id/view_4"
-        android:layout_width="0dp"
-        android:layout_weight="0.5"
-        android:layout_height="wrap_content"
-        android:text="?"
-        />
-    <TextView
-        android:id= "@+id/view_5"
-        android:layout_width="0dp"
-        android:layout_weight="0.5"
-        android:layout_height="wrap_content"
-        android:text="?"
-        />
-    <TextView
-        android:id= "@+id/view_6"
-        android:layout_width="0dp"
-        android:layout_weight="0.5"
-        android:layout_height="wrap_content"
-        android:text="?"
-        />
-</LinearLayout>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/third"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
-    <TextView
-        android:id= "@+id/wynik"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Wynik tego losowania:"
+        <TextView
+            android:id="@+id/dice1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="?"
+            android:textSize="20sp"
+            android:layout_margin="9dp" />
 
-        />
-    <TextView
-        android:id= "@+id/wynik_gry"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Wynik gry:"
+        <TextView
+            android:id="@+id/dice2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="?"
+            android:textSize="20sp"
+            android:layout_margin="9dp" />
 
-        />
-    <TextView
-        android:id= "@+id/rzuty"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Liczba rzutów:"
+        <TextView
+            android:id="@+id/dice3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="?"
+            android:textSize="20sp"
+            android:layout_margin="9dp" />
 
-        />
-    <Button
-        android:id ="@+id/reset"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RESETUJ GRĘ"
-        />
+        <TextView
+            android:id="@+id/dice4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="?"
+            android:textSize="20sp"
+            android:layout_margin="9dp" />
+
+        <TextView
+            android:id="@+id/dice5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="?"
+            android:textSize="20sp"
+            android:layout_margin="9dp" />
     </LinearLayout>
-</RelativeLayout>
+
+    <TextView
+        android:id="@+id/currentRollScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wynik tego losowania: 0"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/gameScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wynik gry: 0"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginVertical="10dp" />
+
+    <TextView
+        android:id="@+id/rollCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liczba rzutów: 0"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginVertical="10dp" />
+
+    <Button
+        android:id="@+id/rollDiceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RZUĆ KOŚĆMI"
+        android:background="#D2691E"
+        android:layout_marginVertical="10dp"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESETUJ WYNIK"
+        android:background="#D2691E"
+        android:layout_marginVertical="10dp"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
