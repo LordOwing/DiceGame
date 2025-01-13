@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
+
         int rollScore = 0;
         for (int i = 0; i < 6; i++) {
             if (counts[i] > 1) {

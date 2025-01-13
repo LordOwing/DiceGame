@@ -60,6 +60,7 @@
             android:src="@drawable/blank"
             android:layout_margin="9dp" />
 
+
         <ImageView
             android:id="@+id/dice5"
             android:layout_width="60dp"
