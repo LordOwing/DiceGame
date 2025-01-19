@@ -18,8 +18,9 @@
         <item name="android:layout_margin">9dp</item>
 
     </style>
-    <style name="BasicButton">
-
+    <style name="Basic">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
     <style name="Theme.DiceGame" parent="Base.Theme.DiceGame" />
 </resources>
